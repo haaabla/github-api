@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GithubAPI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="login-form">
+    <h1>GitHub LOGIN</h1>
+    <label for="username">Login to Search <br> GitHub's API</label>
+    <input type="text" class="username" name="username" placeholder="username">
+    <!-- <label for="password">Password:</label> -->
+    <input type="password" class="password" name="password" placeholder="password">
+    <button class="button" type="submit">LET'S GO</button>
+</div>
+<div class="enter-user-page">
+    <h1>Enter GitHub username</h1>
+    <input type="search" value="Search" onfocus="value=''" class="input-search"></input>
+    <button class="button-search">></button>
+    <div id="showresults">
+        <!-- RESULTS TEMPLATE WILL COME IN HERE -->
+    </div>
+
+</div>
+
+<template id="results">
+    {{#items}}
+        <!-- <a href=""> -->
+        <div class="each-result">
+            <div class="name"><h2>{{fullName}}</h2></div>
+            <img class="images" src='{{image}}'>
+            <div class="showMessageHTML"></div>
+        </div>
+        <!-- </a> -->
+    {{/items}}
+</template>
+
+<template id="showMessage">
+    {{#commit}}
+        <ul>
+            <h3>{{message}}</h3>
+        </ul>
+        <ul>
+            <h4>{{author}}</h4>
+        </ul>
+    {{/commit}}
+</template>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="script.js" charset="utf-8"></script>
+</body>
+</html>

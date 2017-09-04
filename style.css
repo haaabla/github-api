@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2em;
+    color: #FAFBFC;
+    background-color: #24292E;
+    font-family: 'Proxima Nova';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: #FAFBFC;
+    text-align: center;
+}
+
+/******** LOGIN PAGE ********/
+.login-form {
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.username, .password {
+    text-align: center;
+    background-color: #F6F8FA;
+    height: 50px;
+    font-size: 1.2em;
+    margin: 20px;
+    border-radius: 10px;
+    outline-color: #24292E;
+    outline-offset: 5px;
+}
+
+.username {
+    margin-top: -15px;
+}
+
+.button, .button-search {
+    font-size: 0.6em;
+    margin-top: 20px;
+    align-self: center;
+    width: 150px;
+    height: 75px;
+    border-radius: 50px;
+    border: 1px solid #F6F8FA;
+    background-color: #2E8BF6;
+    cursor: pointer;
+    outline-color: #24292E;
+    outline-offset: 5px;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+/******** NEXT PAGE ********/
+.enter-user-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    background-color: #FAFBFC;
+    border-radius: 10px;
+}
+
+.enter-user-page h1 {
+    color: #24292E;
+}
+
+#showresults {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.input-search {
+    width: 300px;
+}
+
+.each-result {
+    position: relative;
+    border: 1px dashed gray;
+    min-height: 128px;
+    width: 600px;
+    margin-bottom: 10px;
+    background-color: gray;
+}
+
+.images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 128px;
+    width: 128px;
+}
+
+.name {
+    margin-left: 150px;
+    vertical-align: middle;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #24292E;
+}
+
+h3 {
+    color: white;
+    font-size: 0.5em;
+}
+
+h4 {
+    color: #2E8BF6;
+    font-size: 0.5em;
+}
