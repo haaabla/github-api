@@ -10,4 +10,4 @@ Day challenge to connect into the GitHub API to search GitHub users once you hav
 
 ## Solution
 
-github-api-search.surge.sh
+http://github-api-search.surge.sh/
