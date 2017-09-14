@@ -7,6 +7,7 @@ Day challenge to connect into the GitHub API to search GitHub users once you hav
 ## Under the Hood
 
 - GitHub API
+- Handlebars to populate search results
 
 ## Solution
 
